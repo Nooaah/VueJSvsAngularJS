@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Bootstrap de Noah</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- DEBUT DU PROJET-->
+
+  <nav>
+    <a href="http://noah-chatelain.co.nf" target="_blank">Site du Développeur @NoahChatelain</a>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        Site basique réalisé durant mon apprentissage de VueJS, toutes les valeurs sont reliées entre elles avec le graphique
+        <img src="https://les-raccourcis-clavier.fr/wp-content/uploads/2019/02/emoji-clin-oeil.png" width="20px">
+      </div>
+    </div>
+  </div>
+
+  <div id="app">
+
+    <div class="container mt-5">
+
+      <div class="row mb-5">
+        <div class="col-md-12">
+          <canvas id="lineChart" height="90px"></canvas>
+        </div>
+      </div>
+
+      <div class="row mt-2">
+        <div class="col-md-12">
+          <img class="pr-2" src="https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg" width="30px">
+          AngularJS
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <div class="md-form">
+            <input type="text" id="form1" v-model="barre11" @keyup="changeBarre11" class="form-control">
+            <label for="form1"></label>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="md-form">
+            <input type="text" id="form1" v-model="barre12" @keyup="changeBarre12" class="form-control">
+            <label for="form1"></label>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="md-form">
+            <input type="text" id="form1" v-model="barre13" @keyup="changeBarre13" class="form-control">
+            <label for="form1"></label>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="md-form">
+            <input type="text" id="form1" v-model="barre14" @keyup="changeBarre14" class="form-control">
+            <label for="form1"></label>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="md-form">
+            <input type="text" id="form1" v-model="barre15" @keyup="changeBarre15" class="form-control">
+            <label for="form1"></label>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="md-form">
+            <input type="text" id="form1" v-model="barre16" @keyup="changeBarre16" class="form-control">
+            <label for="form1"></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <img class="pr-2" src="https://www.stickpng.com/assets/images/58482acecef1014c0b5e4a1e.png" width="30px">
+          VueJS
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <div class="md-form">
+            <input type="text" id="form1" v-model="barre21" @keyup="changeBarre21" class="form-control">
+            <label for="form1"></label>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="md-form">
+            <input type="text" id="form1" v-model="barre22" @keyup="changeBarre22" class="form-control">
+            <label for="form1"></label>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="md-form">
+            <input type="text" id="form1" v-model="barre23" @keyup="changeBarre23" class="form-control">
+            <label for="form1"></label>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="md-form">
+            <input type="text" id="form1" v-model="barre24" @keyup="changeBarre24" class="form-control">
+            <label for="form1"></label>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="md-form">
+            <input type="text" id="form1" v-model="barre25" @keyup="changeBarre25" class="form-control">
+            <label for="form1"></label>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="md-form">
+            <input type="text" id="form1" v-model="barre26" @keyup="changeBarre26" class="form-control">
+            <label for="form1"></label>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <!-- /FIN DU PROJET-->
+
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/js/mdb.js"></script>
+  <!-- VueJS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
+  <!-- SCRIPTS -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>
